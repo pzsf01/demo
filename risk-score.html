@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style class="cp-pen-styles">.container {
+				width: 200px;
+				height: 200px;
+			}
+			
+			@keyframes rotary
+			{
+			  0% {
+			    transform:rotate(0deg);
+			  }
+			  25% {
+			    transform:rotate(90deg);
+			  }
+			  50% {
+			    transform:rotate(180deg);
+			  }
+			  75% {
+			    transform:rotate(270deg);
+			  }
+			  100% {
+			    transform:rotate(360deg);
+			  }
+			  
+			}
+			
+			.status-circle {
+				position: relative;
+			    height:100%;
+			}
+			
+			.circle {
+			  display:flex;
+			  align-items:center;
+			  justify-content: center;
+			  border-radius:100%;
+			}
+			
+			.rotary-circle {
+			  height:100%;
+			  box-sizing:border-box;
+			  animation:rotary 2s infinite;
+			  -webkit-animation:rotary 2s infinite;
+			}
+			
+			.content-circle {
+			  position: absolute;
+			  top:1%;
+			  left:1%;
+			  width:98%;
+			  height:98%;
+			  background:#fff;
+			}
+			
+			.detail-circle {
+			  width:90%;
+			  height:90%;
+			  color:#fff;
+			  font-family: '微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
+				font-weight: 700;
+				font-style: normal;
+				font-size: 28px;
+			}
+			
+			.status-1 .detail-circle {
+				background:rgb(68,218,111);
+			}
+			
+			.status-1 .rotary-circle {
+				background:-webkit-linear-gradient(left,rgba(68,218,111,1),rgba(68,218,111,0) 50%,rgba(68,218,111,1));
+			    background:-o-linear-gradient(left,rgba(68,218,111,1),rgba(68,218,111,0) 50%,rgba(68,218,111,1));
+			    background:-ms-linear-gradient(left,rgba(68,218,111,1),rgba(68,218,111,0) 50%,rgba(68,218,111,1));
+			    background:linear-gradient(left,rgba(68,218,111,1),rgba(68,218,111,0) 50%,rgba(68,218,111,1));
+			}
+
+.status-2 .detail-circle{
+    background:rgb(255,59,47);
+}
+
+.status-2 .rotary-circle {
+    background:-webkit-linear-gradient(left,rgba(255,59,47,1),rgba(255,59,47,0) 50%,rgba(255,59,47,1));
+    background:-o-linear-gradient(left,rgba(255,59,47,1),rgba(255,59,47,0) 50%,rgba(255,59,47,1));
+    background:-ms-linear-gradient(left,rgba(255,59,47,1),rgba(255,59,47,0) 50%,rgba(255,59,47,1));
+    background:linear-gradient(left,rgba(255,59,47,1),rgba(255,59,47,0) 50%,rgba(255,59,47,1));
+}
+
+.status-3 .detail-circle{
+    background:rgb(240,72,68);
+}
+
+.status-3 .rotary-circle {
+    background:-webkit-linear-gradient(left,rgba(240,72,68,1),rgba(240,72,68,0) 50%,rgba(240,72,68,1));
+    background:-o-linear-gradient(left,rgba(240,72,68,1),rgba(240,72,68,0) 50%,rgba(240,72,68,1));
+    background:-ms-linear-gradient(left,rgba(240,72,68,1),rgba(240,72,68,0) 50%,rgba(240,72,68,1));
+    background:linear-gradient(left,rgba(240,72,68,1),rgba(240,72,68,0) 50%,rgba(240,72,68,1));
+}
+</style>
+ </head>
+ <body>
+<!--
+  <div class="container">
+  <div class="status-circle status-1">
+    <div class="circle rotary-circle"></div>
+    <div class="circle content-circle">
+      <div class="circle detail-circle">进行中..</div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="status-circle status-2">
+    <div class="circle rotary-circle"></div>
+    <div class="circle content-circle">
+      <div class="circle detail-circle">60分</div>
+    </div>
+  </div>
+</div>
+-->
+<div class="container">
+  <div class="status-circle status-3">
+    <div class="circle rotary-circle"></div>
+    <div class="circle content-circle">
+      <div class="circle detail-circle">60分</div>
+    </div>
+  </div>
+</div>
+
+ </body>
+</html>
